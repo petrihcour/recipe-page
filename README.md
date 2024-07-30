@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,27 +14,22 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### Screenshot
 
-![](./screenshot.jpg)
+##### Desktop
+![Desktop 1](assets/images/image.png)
+![Desktop 2](assets/images/image-1.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+##### Mobile
+![Mobile 1](assets/images/image-2.png)
+![Mobile 2](assets/images/image-3.png)
+![Mobile 3](assets/images/image-4.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -59,16 +54,44 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="bg-rose-50 p-8 rounded-lg">
+  <h5 class="font-outfit-600 text-rose-800 text-xl pb-2">Preparation time</h5>
+  <ul class="custom-list-disc-rose font-outfit-400 text-stone-600">
+    <li class="pb-2">
+      <div class="px-3">
+        <span class="font-outfit-600">Total:</span> Approximately 10 minutes
+      </div>
+    </li>
+    <li class="pb-2">
+      <div class="px-3">
+        <span class="font-outfit-600">Preparation:</span> 5 minutes
+      </div>
+    </li>
+    <li>
+      <div class="px-3">
+        <span class="font-outfit-600">Cooking:</span> 5 minutes
+      </div>
+    </li>
+  </ul>
+</div>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.custom-list-disc-chestnut {
+  list-style-type: none;
+  padding-left: 0.5rem;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.custom-list-disc-chestnut li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-list-disc-chestnut li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #854632;
 }
 ```
 
