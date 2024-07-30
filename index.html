@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            white: '#ffffff',
+            // stones
+            "stone-100": "#f3e6d8", // lightest
+            "stone-150": "#e4ded8", // light
+            "stone-600": "#5F574E", // dark
+            "stone-900": "#302D2C", // darkest
+            // brown
+            chestnut: "#854632",
+            // rose
+            "rose-800": "#7B284F",
+            "rose-50": "#FFF5FA",
+          },
+          fontFamily: {
+            "young-serif": ['"Young Serif"', 'serif'],
+            "outfit": ['Outfit', 'sans-serif']
+          },
+          fontWeight: {
+            'outfit-400': 400,
+            'outfit-600': 600,
+            'outfit-700': 700,
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main class="md:flex md:flex-col md:bg-stone-100">
+    <div class="md:self-center md:w-6/12 md:md:bg-white md:rounded-xl md:my-24">
+      <div class="md:p-8">
+        <img src="assets/images/image-omelette.jpeg" alt="plate with an omelette and greenery"
+          class="md:img-fluid md:rounded-lg" />
+      </div>
+      <div class="px-8 py-10">
+        <h1 class="text-4xl font-young-serif text-stone-900 pb-6">Simple Omelette Recipe</h1>
+
+        <p class="font-outfit-400 text-stone-600 text-base pb-6">An easy and quick dish, perfect for any meal. This
+          classic omelette combines beaten eggs cooked
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+        <div class="bg-rose-50 p-8 rounded-lg">
+          <h5 class="font-outfit-600 text-rose-800 text-xl pb-2">Preparation time</h5>
+          <ul class="custom-list-disc-rose font-outfit-400 text-stone-600">
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Total:</span> Approximately 10 minutes
+              </div>
+            </li>
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Preparation:</span> 5 minutes
+              </div>
+            </li>
+            <li>
+              <div class="px-3">
+                <span class="font-outfit-600">Cooking:</span> 5 minutes
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="py-8">
+          <h3 class="text-3xl font-young-serif text-chestnut pb-6">Ingredients</h3>
+          <ul class="custom-list-disc-chestnut font-outfit-400 text-stone-600 pe-3">
+            <li class="pb-2">2-3 large eggs</li>
+            <li class="pb-2">Salt, to taste</li>
+            <li class="pb-2">Pepper, to taste</li>
+            <li class="pb-2"> 1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </div>
+
+        <div class="border-y border-stone-150 py-8">
+          <h3 class="text-3xl font-young-serif text-chestnut pb-6">Instructions</h3>
+          <ul class="custom-list-decimal-chestnut font-outfit-400 text-stone-600 pe-3">
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+                pepper until
+                they are well
+                mixed.
+                You can add a tablespoon of water or milk for a fluffier texture.
+              </div>
+            </li>
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Heat the pan:</span> Place a non-stick frying pan over medium heat and add
+                butter or
+                oil.
+              </div>
+            </li>
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Cook the omelette:</span> Once the butter is melted and bubbling, pour in
+                the eggs.
+                Tilt the pan to
+                ensure
+                the eggs evenly coat the surface.
+              </div>
+            </li>
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Add fillings (optional):</span> When the eggs begin to set at the edges
+                but
+                are still
+                slightly runny
+                in the
+                middle, sprinkle your chosen fillings over one half of the omelette.
+              </div>
+            </li>
+            <li class="pb-2">
+              <div class="px-3">
+                <span class="font-outfit-600">Fold and serve:</span> As the omelette continues to cook, carefully lift
+                one
+                edge and
+                fold it over
+                the
+                fillings. Let it cook for another minute, then slide it onto a plate.
+              </div>
+            </li>
+            <li>
+              <div class="px-3">
+                <span class="font-outfit-600">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="py-8">
+          <h3 class="text-3xl font-young-serif text-chestnut pb-6">Nutrition</h3>
+
+          <p class="font-outfit-400 text-stone-600 text-base pb-6">The table below shows nutritional values per serving
+            without the additional fillings.</p>
+          <table class="table-auto w-full">
+            <tbody class="font-outfit-400 text-stone-600 text-base">
+              <tr>
+                <td class="ps-6 py-4">Calories</td>
+                <td class="py-4 text-chestnut font-outfit-700">277kcal</td>
+              </tr>
+              <tr class="border-y border-stone-150">
+                <td class="ps-6 py-4">Carbs</td>
+                <td class="text-chestnut font-outfit-700">0g</td>
+              </tr>
+              <tr class="border-y border-stone-150 py-8">
+                <td class="ps-6 py-4">Protein</td>
+                <td class="text-chestnut font-outfit-700">20g</td>
+              </tr>
+              <tr>
+                <td class="ps-6 py-4">Fat</td>
+                <td class="text-chestnut font-outfit-700">22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="font-outfit-400 text-stone-600 text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="font-outfit-700 text-rose-800">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/petrihcour" target="_blank"
+        class="font-outfit-700 text-rose-800">Vanessa Garcia</a>.
+    </footer>
+  </main>
+</body>
+
+</html>

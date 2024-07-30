@@ -1,0 +1,57 @@
+/* rose list */
+.custom-list-disc-rose {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+.custom-list-disc-rose li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-list-disc-rose li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #7b284f;
+}
+
+/* chestnut bulleted list */
+
+.custom-list-disc-chestnut {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+.custom-list-disc-chestnut li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-list-disc-chestnut li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #854632;
+}
+
+/* chestnut numbered list */
+
+.custom-list-decimal-chestnut {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+.custom-list-decimal-chestnut li {
+  position: relative;
+  counter-increment: list;
+  padding-left: 1.5rem;
+}
+
+.custom-list-decimal-chestnut li::before {
+  content: counter(list) ". ";
+  position: absolute;
+  left: 0;
+  color: #854632;
+  font-weight: bold;
+}
